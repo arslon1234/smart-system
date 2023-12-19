@@ -1,0 +1,88 @@
+$input_bg: #edf2f7;
+$hover-color: #f0f1f5;
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 25px;
+  }
+
+  Form {
+    width: 70%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    .btn{
+        margin-top: 10px;
+    }
+  }
+}
+
+.Login__form-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: $input_bg;
+
+  %input_act {
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 10px;
+  }
+
+  .Login__show {
+    @extend %input_act;
+    display: block;
+  }
+
+  .Login__hide {
+    @extend %input_act;
+    display: none;
+  }
+}
+
+input,
+select {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  height: 45px;
+  padding-left: 15px;
+  color: #272a2c;
+  background: $input_bg;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 5px;
+  border: none;
+}
+
+.login__input-error {
+  margin-top: 5px;
+  color: red;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+label {
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2c2728;
+}
+@media (max-width: 576px) {
+  Form {
+    width: 90%;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

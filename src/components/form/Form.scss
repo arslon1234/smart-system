@@ -1,0 +1,51 @@
+//input style
+.title {
+  font-size: 32px;
+  color: #1D2D5B;
+  font-weight: 500;
+  line-height: 39px;
+  display: flex;
+  justify-content: center;
+  margin: 57px 0;
+}
+
+.form {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+
+  }
+
+  .label {
+    font-size: 16px;
+    color: #000;
+  }
+
+  &__item-input {
+
+    .input {
+      padding: 12px 20px;
+      border: 1.5px solid #C1C7CD;
+      outline: none;
+      border-radius: 3px;
+      min-width: 440px;
+
+      &__error {
+        font-size: 12px;
+      }
+
+      &__disabled {
+
+      }
+
+      &__loading {
+
+      }
+
+    }
+
+  }
+
+}
